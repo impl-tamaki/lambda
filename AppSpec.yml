@@ -1,9 +1,4 @@
 version: 0.0
 os: linux
 files:
-  - source: .
-hooks:
-  AfterInstall:
-    - location: lambda.py
-      timeout: 300
-      runas: root
+  - lambda.zip

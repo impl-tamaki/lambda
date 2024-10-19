@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.x
+  build:
+    commands:
+      - echo "Building the application..."
+      - zip -r lambda.zip lambda.py
+artifacts:
+  files:
+    - lambda.zip
