@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - echo "Building the application..."
-      - zip -r lambda.zip lambda.py
+      - zip -r lambda.zip lambda.py AppSpec.yml
 artifacts:
   files:
     - lambda.zip
